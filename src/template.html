@@ -1,362 +1,205 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> cobimr@protonmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
-
-    <!-- Put here your site title -->
-    <title>Kevin Yoo | Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
-
-    <!-- Required librarys -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
-
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
-
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
-
-    <!-- **** Hero Section **** -->
-    <div id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">KEVIN YOO</span>
-          <br />
-          I'm the Developer you need.
-        </h1>
-        <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Learn More</a>
-        </p>
+    <header class="showcase">
+      <div class="showcase-top">
+        <img src="img/logo.png" alt="Netflix" />
+        <a href="#" class="btn btn-rounded">Sign In</a>
       </div>
-    </div>
-    <!-- /END Hero Section -->
-
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">
-          About 
-        </h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
-              <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                Hello, welcome to my portfolio! My name is Kevin. I graduated
-                from UCLA and worked for different companies, each with its own
-                unique challenges that helped me grow as a developer. From
-                taking the lead role of developers, to being mentored
-                directly under a technology professional from Google, I have
-                been fortunate to learn as much as I did from my previous work
-                experiences.
-              </p>
-              <!-- <p class="about-wrapper__info-text">
-                I take web development seriously. One of my unique tendencies is
-                to wake up at 4am every morning and use those extra hours to
-                advance my knowledge and improve my skills. Regardless of what
-                technology stack is used, I am confident I will become a
-                valuable employee in a short span of time.
-              </p> -->
-              <span class="d-flex mt-3">
-                <a
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="https://kevinyooky-resume.herokuapp.com/"
-                >
-                  View Resume
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
-
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">
-            Projects
-          </h2>
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Face Detector</h3>
-                <div>
-                  <p class="mb-4">
-                    Face Detector is a machine learning app that detects faces
-                    in photos. Simply copy and paste the url of a picture and
-                    see the magic happen before your eyes!
-                  </p>
-                  <p>
-                    (May take 1 minute to load)
-                  </p>
-                </div>
-                <a
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://kevinyooky-facedetector.herokuapp.com/"
-                >
-                  See Live
-                </a>
-                <a
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/kevinyooky/FaceDetector"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a
-                  href="https://kevinyooky-facedetector.herokuapp.com/"
-                  target="_blank"
-                >
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">RoboBuddies</h3>
-                <div>
-                  <p class="mb-4">
-                    RoboBuddies has your favorite buddies with their names and contact information!
-                    Simply search for your favorite buddy in the search box. Built using React and Redux.
-                  </p>
-                  <p>
-                  (May take 1 minute to load)
-                </p>
-                </div>
-                <a
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://kevinyooky-robobuddies.herokuapp.com/"
-                >
-                  See Live
-                </a>
-                <a
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/kevinyooky/Robo-Buddies"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a
-                  href="https://salty-lowlands-19391.herokuapp.com/"
-                  target="_blank"
-                >
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project2.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Wilo</h3>
-                <div>
-                  <p class="mb-4">
-                    Wilo is a social platform allowing users to stream and watch streamers. This application 
-                    has been built using React, Redux, OBS, and FLV player. 
-                  </p>
-                </div>
-                <!-- <a
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="https://salty-lowlands-19391.herokuapp.com/"
-                >
-                  See Live
-                </a> -->
-                <a
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/kevinyooky/wilo"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a
-                  href="https://github.com/kevinyooky/wilo"
-                  target="_blank"
-                >
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project3.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <!-- <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <!-- <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-          <!-- /END Project -->
-        </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
-
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-            Email me to schedule an interview
-          </p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:kevinyoo.y@gmail.com"
-            >Schedule</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
-
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      <div class="showcase-content">
+        <h1>See what's next</h1>
+        <p>Watch anywhere. Cancel sanytime</p>
+        <a href="#" class="btn btn-xl">
+          Watch Free For 30 Days <i class="fas fa-chevron-right btn-icon"></i>
         </a>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/kyoo/" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="https://github.com/kevinyooky" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
+      </div>
+    </header>
+
+    <section class="tabs">
+      <div class="container">
+        <div id="tab-1" class="tab-item tab-border">
+          <i class="fas fa-door-open fa-3x">
+            <p class="hide-sm">Cancel anytime</p>
+          </i>
+        </div>
+        <div id="tab-2" class="tab-item">
+          <i class="fas fa-tablet-alt fa-3x">
+            <p class="hide-sm">Watch anywhere</p>
+          </i>
+        </div>
+        <div id="tab-3" class="tab-item">
+          <i class="fas fa-tags fa-3x">
+            <p class="hide-sm">Pick your price</p>
+          </i>
+        </div>
+      </div>
+    </section>
+
+    <section class="tab-content">
+      <div class="container">
+        <!-- Tab content 1 -->
+        <div id="tab-1-content" class="tab-content-item show">
+          <div class="tab-1-content-inner">
+            <div>
+              <p class="text-lg">
+                If you decide Netflix isn't for you - no problem. No commitment.
+                Cancel online anytime.
+              </p>
+              <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+            </div>
+            <img src="./img/tab-content-1.png" alt="" />
+          </div>
         </div>
 
-        <hr />
+        <!-- Tab content 2 -->
+        <div id="tab-2-content" class="tab-content-item">
+
+          <div class="tab-2-content-top">
+            <p class="text-lg">
+              Watch TV shows and movies anytme, anywhere - personalized for you.
+            </p>
+            <a href="#" class="btn btn-lg">Watch free for 30 days</a>
+          </div>
+
+          <div class="tab-2-content-bottom">
+            <div>
+              <img src="./img/tab-content-2-1.png" alt="  " />
+              <p class="text-md">Watch on your TV</p>
+              <p class="text-dark">
+                Smart Tvs, Playstation, Xbox, Chromescast, Apple TV, Blu-ray
+              </p>
+            </div>
+
+            <div>
+              <img src="./img/tab-content-2-2.png" alt="  " />
+              <p class="text-md">Watch instantly or download for later</p>
+              <p class="text-dark">
+                Available on phone and tablet, wherever you go.
+              </p>
+            </div>
+
+            <div>
+              <img src="./img/tab-content-2-3.png" alt="  " />
+              <p class="text-md">Use any computer</p>
+              <p class="text-dark">
+                Watch right on Netflix.com
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab content 3 -->
+        <div id="tab-3-content" class="tab-content-item">
+          <div class="text-center">
+            <p class="text-lg">Choose one plan and watch everything on Netflix</p>
+            <a href="#" class="btn btn-lg">Watch Free For 30 days </a>
+          </div>
+          
+          <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price after free month ends on 6/19/19</td>
+                <td>$8.99</td>
+                <td>$12.99</td>
+                <td>$15.99</td>
+              </tr>
+              <td>HD Available</td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Ultra HD Available</td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-times"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Screens you can watch on at the same time</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Watch on your laptop, TV, phone and tablet</td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Unlimited movies and TV shows</td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>Cancel anytime</td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                  <td>First month free</td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                  <td><i class="fas fa-check"></i></td>
+                </tr>
+
+            </tbody>
+          </table>
+        </div>
       </div>
+      
+    </section>
+    <footer class="footer">
+			<p>Questions? Call 1-866-579-7172</p>
+			<div class="footer-cols">
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Investor Relations</a></li>
+					<li><a href="#">Ways To Watch</a></li>
+					<li><a href="#">Corporate Information</a></li>
+					<li><a href="#">Netflix Originals</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Help Center</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Terms Of Use</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Redeem Gift Cards</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Speed Test</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Media Center</a></li>
+					<li><a href="#">Buy Gift Cards</a></li>
+					<li><a href="#">Cookie Preferences</a></li>
+					<li><a href="#">Legal Notices</a></li>
+				</ul>
+			</div>
+
     </footer>
-    <!-- /END Footer Section -->
+    <script src="js/main.js"></script>
   </body>
 </html>
