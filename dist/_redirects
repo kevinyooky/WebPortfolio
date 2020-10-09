@@ -1,5 +1,0 @@
-/kevin https://kevinyooky.com
-
-
-/api/* https://jsonplaceholder.typicode.com/:splat 200
-/getword /.netlify/functions/getword/getword.js 200
